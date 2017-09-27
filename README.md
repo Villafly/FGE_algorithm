@@ -8,8 +8,8 @@ The code works under Windows , Linux and other Unix variants with python.
 /////////////////////////////////////////////////////////////////////////////
 
 Parameters:
-Input graph path (-input:)
-Output graph path (--output_n2v:)
+Input graph path (-input:)  \
+Output graph path (--output_n2v:)\
 Number of dimensions. Default is 128 (--dimensions:)
 Length of walk per source. Default is 10 (--walk-length:)
 Number of walks per source. Default is 2048 (--num-walks:)
