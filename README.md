@@ -7,7 +7,7 @@ The code works under Windows , Linux and other Unix variants with python.
 
 /////////////////////////////////////////////////////////////////////////////
 
-Parameters:
+Parameters:\
 Input graph path (-input)  \
 Output graph path (--output_n2v)\
 Number of dimensions. Default is 128 (--dimensions)\
@@ -18,9 +18,9 @@ Number of epochs in SGD. Default is 1 (-iter)\
 Return hyperparameter. Default is 1 (--p)\
 Inout hyperparameter. Default is 1 (--q)\
 Graph is directed. (--directed)\
-Graph is weighted. (--weighted )\
+Graph is weighted. (--weighted )
 
 /////////////////////////////////////////////////////////////////////////////
 
-Usage:
+Usage:\
 python ./main_appro_nd.py --input ./karate.edgelist --output_n2v ./karate_embedding --dimensions 128 
