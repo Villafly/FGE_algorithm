@@ -1,8 +1,6 @@
 # FGE_algorithm
 ========================================================================
-    FGE_algorithm
-========================================================================
-
+   
 FGE is an algorithmic framework for representational learning on graphs. Given any graph, it can learn continuous feature representations for the nodes, which can then be used for various downstream machine learning tasks. 
 
 The code works under Windows , Linux and other Unix variants with python. 
