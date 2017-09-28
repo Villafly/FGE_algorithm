@@ -39,7 +39,7 @@ Parameters:\
 ``Number of dimensions. Default is 128 (--dimensions)``\
 ``Length of walk per source. Default is 10 (--walk-length)``\
 ``Number of walks per source. Default is 2048 (--num-walks)``\
-``Context size for optimization. Default is 10`` (--window-size)``\
+``Context size for optimization. Default is 10 (--window-size)``\
 ``Number of epochs in SGD. Default is 1 (-iter)``\
 ``Return hyperparameter. Default is 1 (--p)``\
 ``Inout hyperparameter. Default is 1 (--q)``\
@@ -49,4 +49,4 @@ Parameters:\
 /////////////////////////////////////////////////////////////////////////////
 
 Usage:\
-python ./main_appro_nd.py --input ./karate.edgelist --output_n2v ./karate_embedding --dimensions 128 
+``python ./main_appro_nd.py --input ./karate.edgelist --output_n2v ./karate_embedding --dimensions 128`` 
