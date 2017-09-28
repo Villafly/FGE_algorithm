@@ -7,7 +7,7 @@ The code works under Windows , Linux and other Unix variants with python.
 
 This repository provides a reference implementation of *FGE_algorithm* as described in the paper:<br>
 > The Hidden Flow Structure and Metric Space of Network Embedding Algorithms Based on Random Walks<br>
-> Weiwei Gu, Li Gong, Xiaodan Lou, and Jiang Zhang1<br>
+> Weiwei Gu, Li Gong, Xiaodan Lou, and Jiang Zhang<br>
 > Scientific Reports.<br>
 > <Insert paper link>
 
