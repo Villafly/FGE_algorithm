@@ -46,7 +46,6 @@ Parameters:\
 ``Graph is directed. (--directed)``\
 ``Graph is weighted. (--weighted )``
 
-/////////////////////////////////////////////////////////////////////////////
 
 Usage:\
 ``python ./main_appro_nd.py --input ./karate.edgelist --output_n2v ./karate_embedding --dimensions 128`` 
