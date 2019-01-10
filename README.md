@@ -4,7 +4,8 @@
 FGE is an algorithmic framework for representational learning on graphs. Given any graph, it can learn continuous feature representations for the nodes, which can then be used for various downstream machine learning tasks. 
 
 The code works under Windows , Linux and other Unix variants with python.
-Please install networkx under version 1.1 first. <pip install networkx==1.1>
+Please install networkx under version 1.1 first.
+<pip install networkx==1.1>
 
 This repository provides a reference implementation of *FGE_algorithm* as described in the paper:<br>
 > The Hidden Flow Structure and Metric Space of Network Embedding Algorithms Based on Random Walks<br>
