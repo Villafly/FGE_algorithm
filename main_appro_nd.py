@@ -5,6 +5,7 @@
 @function: the main file to run
 '''
 from sklearn.metrics.cluster import normalized_mutual_info_score
+import matplotlib.pyplot as plt
 import node2vec
 import deepwalk2vec
 import align_algorithm as align_algo
@@ -197,9 +198,9 @@ def correlation():
     nx_G = read_graph()
 
     ### deep walk ###
-    G_node2vec = node2vec.Graph(nx_G, args.directed, args.p, args.q)
+   
+#    +1 is temp,  G_node2vec = node2vec.Graph(nx_G, args.directed, args.p, args.q)
     G_node2vec.preprocess_transition_probs()
-#    +1 is temp, 
     node_number = nx_G.number_of_nodes()
     print nx_G.nodes()
     last_nd_euler_dis = np.zeros((node_number, node_number))
@@ -301,7 +302,7 @@ def plot():
 
     # simulate walks
     node2vec_walks = G_node2vec.simulate_walks(args.num_walks, args.walk_length)
-    G_node2vec.set_weights(node2vec_walks)
+    #G_node2vec.set_weights(node2vec_walks)
 #    save_weights(G_node2vec.get_weights())
 
     #### word2vec embedding ####
@@ -309,7 +310,7 @@ def plot():
     nd_pos = w2c_mds_dec(nd_vec, dim=2)
 
     #### flow network ####
-    r_G_node2vec = fn.create(node2vec_walks, G_node2vec.G.number_of_nodes())
+    r_G_node2vec = fn.create(node2vec_walks, len(nx_G.nodes()))
     m_matrix = fn.markov_matrix(r_G_node2vec)
     u_matrix = fn.fundamental_matrix(r_G_node2vec, m_matrix)
     l_matrix = fn.average_first_time_matrix(r_G_node2vec, m_matrix, u_matrix)
@@ -345,8 +346,8 @@ def plot():
 
 # 主程序
 def main(args):
-     correlation()
-#    plot()
+     #correlation()
+     plot()
 
 if __name__ == "__main__":
     args = parse_args()
